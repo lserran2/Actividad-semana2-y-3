@@ -1,0 +1,44 @@
+Parte 1: Breve investigación 
+Investiga y responde las siguientes preguntas en un archivo .docx o .pdf:
+¿Qué es un Google Dork?
+    Son combinaciones de operadores de búsqueda que se utilizan para extraer información valiosa desde Google.
+¿Por qué es útil en la etapa de reconocimiento?
+    Los Google Dorks son útiles porque permiten recopilar información pública de una organización o persona de manera rápida y sin necesidad de herramientas complejas. Esta información puede ayudar a identificar posibles vulnerabilidades.
+¿Qué significa "OSINT" y cómo se relaciona con los Dorks?
+    OSINT (Open Source Intelligence) es el proceso de recolección y análisis de información obtenida de fuentes abiertas y públicas. Los Google Dorks son una técnica de OSINT porque permiten encontrar datos disponibles libremente en internet, sin vulnerar sistemas.
+
+Menciona 3 operadores comunes utilizados en Google Dorks.
+    filetype: especifica el tipo de archivo.
+    site: limita la búsqueda a un dominio en específico.
+    intitle: busca palabras en el título de las páginas.
+
+Parte 2: Aplicación práctica
+1. Buscar archivos Excel públicos: filetype:xls site:drive.google.com
+    Encontré hojas de cálculo públicas con listados de datos, algunas con inventarios o registros de asistencia.
+    La mayoría parecen ser documentos de uso personal o institucional compartidos por error.
+
+
+2. Buscar contraseñas filtradas en archivos de texto: intext:"password" filetype:txt
+    Aparecieron archivos de texto con ejemplos genéricos de contraseñas y manuales de configuración.
+    Algunos parecían contener credenciales reales antiguas, pero no se verificó.
+
+
+3. Buscar paneles de login expuestos: intitle:"Login" inurl:admin
+    Aparecieron paneles de administración de sitios web y routers.
+    Ninguno era accesible sin usuario y contraseña, pero muestran que están expuestos públicamente.
+
+
+4. Buscar cámaras de vigilancia abiertas: inurl:"/view.shtml"
+    Algunas cámaras mostraban imágenes en vivo de calles y negocios.
+    La mayoría parecían estar en EE. UU. y Europa.
+
+
+5. Dos dorks adicionales creados por mí
+    filetype:pdf "confidencial" : Buscaba documentos en PDF que contuvieran información sensible. Encontré manuales internos de empresas, algunos sin datos críticos.
+    intitle:"index of" "backup" : Buscaba directorios abiertos con carpetas de respaldo. Encontré algunos listados de archivos, pero sin acceso a información relevante.
+
+Parte 3: Reflexión final
+    Esta actividad me pareció interesante porque muestra cuánta información se expone en internet sin que las personas lo noten. Los principales riesgos son que se filtren datos personales, 
+    credenciales o información interna de empresas, lo cual puede facilitar ataques cibernéticos. Para evitar esto, las personas y empresas deberían configurar correctamente los 
+    permisos de archivos compartidos, no dejar paneles de administración abiertos al público, usar contraseñas robustas y cambiarlas periódicamente realizar auditorías de seguridad para detectar información expuesta.
+
